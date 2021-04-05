@@ -1,0 +1,31 @@
+div h1{
+    text-align: center;    
+}
+div h1::first-letter{
+    color: chartreuse;
+}
+div nav ul li:nth-child(1){
+    color: red;
+
+}
+div nav ul li:nth-child(2){
+    color: green;
+}
+div nav ul li:nth-child(3){
+    color: blue;
+}
+div nav ul li:nth-child(4){
+    color:blueviolet;
+}
+div nav ul li:nth-child(5){
+    color: goldenrod;
+}
+
+.head{
+    background-color:white;
+    background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMDAxMjRfMyAg/MDAxNTc5ODIxODU5NTc4.xB4Tb4za4QHvn0qUUXZtIA400TNHcQHbL586Fb3HKp8g.kp1t2A4ZHeiJUK1hL6F8Wo_tPP2yUQCGNPpQu5DB8cwg.PNG.67233941/1579821855036.png?type=w800");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+ 
+}
