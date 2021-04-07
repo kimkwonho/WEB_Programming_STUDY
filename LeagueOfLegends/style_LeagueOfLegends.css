@@ -5,27 +5,83 @@ div h1::first-letter{
     color: chartreuse;
 }
 div nav ul li:nth-child(1){
-    color: red;
-
+    color: black;
+    padding: 10px 10px;
+    text-shadow: 2px 5px 5px white;
+    background-color: red;
+    border: 2px dotted black;
+    list-style-type: square;
+    font-style: oblique;
+    
+    
 }
 div nav ul li:nth-child(2){
-    color: green;
+    color: black;
+    padding: 10px 10px;
+    text-shadow: 2px 5px 5px white;
+    background-color: green;
+    border: 2px dotted black;
+    list-style-type: square;
+    font-style: oblique;
+    
 }
 div nav ul li:nth-child(3){
-    color: blue;
+    color: black;
+    padding: 10px 10px;
+    text-shadow: 2px 5px 5px white;
+    background-color: rgb(0, 61, 194);
+    border: 2px dotted black;
+    list-style-type: square;
+    font-style: oblique;
 }
 div nav ul li:nth-child(4){
-    color:blueviolet;
+    color: black;
+    padding: 10px 10px;
+    text-shadow: 2px 4px 5px white;
+    background-color: rgb(238, 68, 238);
+    border: 2px dotted black;
+    list-style-type: square;
+    font-style: oblique;
 }
 div nav ul li:nth-child(5){
-    color: goldenrod;
+    color: black;
+    padding: 10px 10px;
+    text-shadow: 2px 4px 5px white;
+    background-color: goldenrod;
+    border: 2px dotted black;
+    list-style-type: square;
+    font-style: oblique;
+    
 }
 
 .head{
     background-color:white;
     background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMDAxMjRfMyAg/MDAxNTc5ODIxODU5NTc4.xB4Tb4za4QHvn0qUUXZtIA400TNHcQHbL586Fb3HKp8g.kp1t2A4ZHeiJUK1hL6F8Wo_tPP2yUQCGNPpQu5DB8cwg.PNG.67233941/1579821855036.png?type=w800");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 50% 100%;
+    background-position: center; 
+}
+.nav{
+    display: inline-block;
 
- 
+}
+.main{
+    display: inline-block;
+  
+}
+.aside{
+    display: inline-block;
+}
+.footer{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+footer h4~p{
+    display: none;
+}
+footer:hover h4~p{
+    display: block;
 }
