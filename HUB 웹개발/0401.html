@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./0401style.css">
+</head>
+<body>
+    <h1><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+<form action="https://www.google.com/search" method="GET">
+    <div class="mx-auto mt-5 search-bar">
+        <input name="q" class="search-bar" placeholder="검색해주세요."/>
+
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button  class="btn btn-primary" onclick="listup();" type="button">검색</button> <!--form안에 있으면 submit해줌-->
+    </div>
+</form>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    function listup() {
+        // alert("버튼동작 확인");
+
+        jQuery.ajax({
+            type:"GET",
+            url : "http://jsonplaceholder.typicode.com/posts",
+
+            success : function(data){
+                console.log("data: "+data);
+                for(i in data){
+                    console.log("내용: "+data[i].title);
+                }
+
+            },
+            error : function(xhr, status, error){console.log("ajax error");}
+        })
+    }
+</script>
+
+
+
+    
+    
+    
+</body>
+</html>
