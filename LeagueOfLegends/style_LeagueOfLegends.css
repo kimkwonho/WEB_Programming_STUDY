@@ -1,6 +1,9 @@
 div h1{
     text-align: center;    
 }
+hr{
+    margin: 0px;
+}
 div h1::first-letter{
     color: chartreuse;
 }
@@ -63,14 +66,26 @@ div nav ul li:nth-child(5){
 }
 .nav{
     display: inline-block;
+    border: 3px solid black;
+    text-align: center;
+    margin: 0px;
+    outline: 0px;
+    float: left;
 
 }
 .main{
     display: inline-block;
+    position: absolute;
+    float: left;
+    background-color: rgb(245, 122, 7);
   
 }
 .aside{
     display: inline-block;
+    position: absolute;
+    float: right;
+    top: 400px;
+    right: 0px;
 }
 .footer{
     background-color: black;
@@ -78,6 +93,7 @@ div nav ul li:nth-child(5){
     margin: 0px;
     border: 0px;
     padding: 0px;
+    clear: both;
 }
 footer h4~p{
     display: none;
@@ -85,3 +101,31 @@ footer h4~p{
 footer:hover h4~p{
     display: block;
 }
+h4{
+    margin: 0px;
+}
+div.static_parent{
+    position: static;
+}
+.banner{
+    width: 90px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.9;
+}
+@media screen and(min-width:200px)
+{
+    nav{
+        width: 20%;
+    }
+    section{
+        width: 60%;
+    }
+    aside{
+        width: 20%;
+    }
+
+}
+
+    
